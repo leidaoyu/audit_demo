@@ -2,17 +2,7 @@
 import torch
 from models.roformer import RoFormerTokenizer, RoFormerForSequenceClassification, RoFormerConfig
 import os
-import requests
-import shutil
-from downloader import download_file
-
-
-def download_file(url, saved_path):
-    with requests.get(url, stream=True) as r:
-        with open(saved_path, 'wb') as f:
-            shutil.copyfileobj(r.raw, f)
-
-    return saved_path
+from functions.downloader import download_file
 
 
 def get_model(pretrained_model, load_model_path, num_labels):

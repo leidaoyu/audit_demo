@@ -4,7 +4,6 @@ import torch.nn.functional as F
 import numpy as np
 from models.roformer import RoFormerPreTrainedModel, RoFormerModel
 from sklearn import metrics
-from prettytable import PrettyTable
 
 
 class SingleLabelLoss(nn.Module):

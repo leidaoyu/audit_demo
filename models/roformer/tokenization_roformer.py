@@ -2,7 +2,7 @@ import jieba
 from transformers import BasicTokenizer, BertTokenizer
 # from pytorch_pretrained_bert import BertModel, BertTokenizer
 # import pkuseg
-jieba.load_userdict("./vocab.txt")
+jieba.load_userdict("./data/vocab.txt")
 
 # seg = pkuseg.pkuseg(model_name='mixed', user_dict = 'chinese_roformer_base/vocab.txt')  # 程序会自动下载所对应的细领域模型
 
