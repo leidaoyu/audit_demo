@@ -55,11 +55,11 @@ if not os.path.exists('./ckpt/'): os.makedirs('./ckpt/')
 
 if not os.path.exists('./ckpt/model2.ckpt'):
     download_file(
-        'https://huggingface.co/shouldbe/auditDemo/resolve/main/ContentAudit_0_1_roformer-base/E(1)_M(f1%3D0.8476).ckpt',
+        'https://openmmlab-open.oss-cn-shanghai.aliyuncs.com/models/dev/weight/demo_username/text_audit_demo/model2.ckpt?Expires=1678949136&OSSAccessKeyId=LTAI5tQMnQveWBRcof7Kwums',
         './ckpt/model2.ckpt')
 if not os.path.exists('./ckpt/model4.ckpt'):
     download_file(
-        'https://huggingface.co/shouldbe/auditDemo/resolve/main/ContentAudit_4_roformer-base/E(2)_M(f1%3D0.8158).ckpt',
+        'https://openmmlab-open.oss-cn-shanghai.aliyuncs.com/models/dev/weight/demo_username/text_audit_demo/model4.ckpt?Expires=1678949140&OSSAccessKeyId=LTAI5tQMnQveWBRcof7Kwums',
         './ckpt/model4.ckpt')
 
 model_2 = get_model('junnyu/roformer_chinese_base', './ckpt/model2.ckpt', 2)
